@@ -1,0 +1,123 @@
+@font-face {
+    src: url(fonts\Heebo-VariableFont_wght.ttf);
+    font-family: Heebo;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+  }
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    flex: 1;
+    height: 100vh;
+    /* background-color: red; /* Change color as desired */
+    /* border: 1px solid blue; */
+    justify-content: center;
+    vertical-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: Heebo;
+}
+
+h2 {
+    color: #63F794;
+    font-size: 34pt;
+    font-family: Heebo;
+}
+
+.centerContainer {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80%;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mainTitle {
+    font-size: 50pt;
+}
+
+p {
+    color: white;
+    font-size: 18pt;
+    font-family: Heebo;
+}
+
+button{
+    background-color: #63F794;
+    border: 0;
+    font-family: Heebo;
+    font-weight: 500;
+    font-size: 16pt;
+    color: white;
+    height: 40pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    border-radius: 10px;
+}
+
+.hero_image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gif_image_row {
+    width: 50%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.gif_row {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#parText {
+    color: #63F794;
+    font-family: Heebo;
+    font-size: 20pt;
+}
+
+#exercise_graph {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#tagline {
+    text-align: center;
+    color: white;
+}
+
+.recall {
+    align-content: center;
+    text-align: center;
+    height: 50vh;
+}

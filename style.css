@@ -34,7 +34,7 @@ body, html {
 .container {
     flex: 1;
     min-height: fit-content;
-    min-width: 500px;
+    min-width: 400px;
     width: 700px;
     max-width: 100vw;
     /* background-color: red; /* Change color as desired */

@@ -17,16 +17,29 @@ body, html {
 
 .container-row {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+.reverseWrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
     flex: 1;
-    height: 100vh;
+    height: 600px;
+    min-width: 500px;
     /* background-color: red; /* Change color as desired */
     /* border: 1px solid blue; */
     justify-content: center;
     vertical-align: center;
+    width: fit-content;
 }
 
 h1 {
@@ -119,5 +132,5 @@ button{
 .recall {
     align-content: center;
     text-align: center;
-    height: 50vh;
+    height: 350px;
 }

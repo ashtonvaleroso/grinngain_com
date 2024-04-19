@@ -4,39 +4,31 @@
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     background-color: black;
-  }
-
-.container-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-row {
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
 }
 
 .reverseWrap {
     display: flex;
     flex-wrap: wrap-reverse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrap {
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
     flex: 1;
     min-height: fit-content;
-    min-width: 400px;
-    width: 700px;
-    max-width: 100vw;
+    min-width: 50vh;
+    width: 50vw;
     /* background-color: red; /* Change color as desired */
     /* border: 1px solid blue; */
     justify-content: center;
@@ -78,6 +70,8 @@ p {
 }
 
 button{
+    line-height: 1;
+    text-wrap: nowrap;
     background-color: #63F794;
     border: 0;
     font-family: Heebo;
@@ -91,14 +85,22 @@ button{
 }
 
 .hero_image {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     height: 100vh;
+    max-height: 700px;
     width: 100%;
     object-fit: cover;
 }
 
 .gif_image_row {
-    width: 50%;
-    height: 60vh;
+    min-width: 20vw;
+    max-width: 40vw;
+    min-height: 300px;
+    height: fit-content;
+    max-height: 700px;
     object-fit: cover;
 }
 
@@ -112,6 +114,7 @@ button{
     align-content: space-evenly;
     margin-right: 10%;
     margin-left: 10%;
+    max-width: 80vw;
 }
 
 #parText {
@@ -130,6 +133,7 @@ button{
 
 #tagline {
     text-align: center;
+    text-wrap: wrap;
     color: white;
 }
 
@@ -137,4 +141,5 @@ button{
     align-content: center;
     text-align: center;
     height: 350px;
+    max-width: 100vw;
 }

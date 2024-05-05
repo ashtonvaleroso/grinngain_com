@@ -3,32 +3,83 @@
     font-family: Heebo;
 }
 
-body, html {
-    margin-left: auto;
-    margin-right: auto;
+body,
+html {
+    margin: 0;
     height: 100%;
     background-color: black;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    color: white;
+    height: 30px;
+}
+
+.content {
+    padding-top: 50px;
 }
 
 .reverseWrap {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .wrap {
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.navbar {
+    z-index: 99;
+    background-color: black;
+    /* Change the background color */
+    position: fixed;
+    /* Make it stick to the top */
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: heebo;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+/* Style for the links in the navbar */
+.navbar .nav-item {
+    display: block;
+    color: #63F794;
+    /* Change the text color */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Change the color of the links when hovered */
+.navbar .nav-item:hover {
+    color: white;
+    /* Change the text color */
 }
 
 .container {
     flex: 1;
     min-height: fit-content;
     min-width: 50vh;
-    width: 50vw;
+    width: 50%;
     /* background-color: red; /* Change color as desired */
     /* border: 1px solid blue; */
     justify-content: center;
@@ -69,7 +120,7 @@ p {
     font-family: Heebo;
 }
 
-button{
+button {
     line-height: 1;
     text-wrap: nowrap;
     background-color: #63F794;
@@ -96,12 +147,9 @@ button{
 }
 
 .gif_image_row {
-    min-width: 20vw;
-    max-width: 40vw;
-    min-height: 300px;
-    height: fit-content;
-    max-height: 700px;
-    object-fit: cover;
+    width: 50%;
+    object-fit: contain;
+    max-height: 80vh;
 }
 
 .gif_row {
@@ -112,8 +160,8 @@ button{
     display: flex;
     flex-direction: row;
     align-content: space-evenly;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 80vw;
 }
 
@@ -142,4 +190,86 @@ button{
     text-align: center;
     height: 350px;
     max-width: 100vw;
+}
+
+
+.beta-button {
+    color: white;
+    background-color: #63F794;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    margin: 7px;
+}
+
+.beta-button:hover {
+    font-weight: bold;
+}
+
+#beta_access_background {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.relative {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center-text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.center-text-align {
+    text-align: center;
+}
+
+.email-signup {
+    font-family: heebo;
+    background-color: white;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 26rem;
+    max-width: 80vw;
+    height: 24pt;
+    outline: none;
+    font-size: 16pt;
+}
+
+.signup-button {
+    width: 26rem;
+    max-width: 80vw;
+    font-size: 14pt;
+    padding: 10px;
+    height: auto;
+    font-weight: normal;
+}
+
+.home-button {
+    text-decoration: none;
+    padding-left: 2%;
+}
+
+.darkened-background {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.rounded-rectangle-40 {
+    display: block;
+    width: 40rem;
+    border-radius: 30px;
 }

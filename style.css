@@ -12,6 +12,8 @@ body,
 html {
     min-height: 100vh;
     background-color: black;
+    font-family: heebo;
+    overflow-x: hidden;
 }
 
 
@@ -214,7 +216,7 @@ button {
 }
 
 #early_access_background {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
 }
@@ -245,18 +247,17 @@ button {
     font-family: heebo;
     background-color: white;
     border: solid;
-    border-color: black;
+    border-color: grey;
     border-radius: 10px;
-    width: 26rem;
-    max-width: 80vw;
-    height: 24pt;
+    width: 96%;
+    height: 20pt;
     outline: none;
     font-size: 16pt;
+    padding: 7px;
 }
 
 .signup-button {
-    width: 26rem;
-    max-width: 80vw;
+    width: 100%;
     font-size: 14pt;
     padding: 10px;
     height: auto;
@@ -275,9 +276,11 @@ button {
 
 .rounded-rectangle-40 {
     display: block;
-    width: 40rem;
-    max-width: 100vw;
+    width: 30rem;
+    max-width: 90vw;
     border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar {
@@ -306,4 +309,87 @@ button {
     .menu-button {
         display: block;
     }
+}
+
+.small-input {
+    font-family: heebo;
+    background-color: white;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 40rem;
+    max-width: 80vw;
+    height: 20pt;
+    outline: none;
+    font-size: 16pt;
+    padding: 7px;
+}
+
+.large-input {
+    font-family: heebo;
+    background-color: white;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    width: 40rem;
+    max-width: 80vw;
+    height: 20rem;
+    outline: none;
+    font-size: 16pt;
+    padding: 7px;
+}
+
+.submit-button {
+    font-family: heebo;
+    text-transform: uppercase;
+    font-size: 14pt;
+    height: 30pt;
+    width: 41rem;
+    max-width: 80vw;
+    background-color: #63F794;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.sub-span {
+    font-family: heebo;
+    color: green;
+    font-size: 14pt;
+}
+
+footer {
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    color: #63F794;
+    font-size: 14pt;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+footer a{
+    text-decoration: none;
+    color: #63F794;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.download-button {
+    background-color: black;
+    border: solid white;
+    border-radius: 30px;
+}
+
+.download-text {
+    text-align: left;
+    font-size: 12pt;
+}
+
+.download-button:hover {
+    background-color: #222;
 }

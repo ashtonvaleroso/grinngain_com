@@ -393,3 +393,11 @@ footer a:hover{
 .download-button:hover {
     background-color: #222;
 }
+
+.early-access-text h1 {
+    font-size: 30pt;
+}
+
+.early-access-text h2 {
+    font-size: 20pt;
+}

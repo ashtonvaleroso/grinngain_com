@@ -401,3 +401,18 @@ footer a:hover{
 .early-access-text h2 {
     font-size: 20pt;
 }
+
+.center {
+    margin: 0 auto;
+}
+
+.instructions p {
+    font-size: 14pt; text-align: left;
+}
+
+.instructions ol {
+    font-size: 14pt;
+    text-align: left;
+    list-style-type: decimal;
+    padding-left: 30pt;
+}

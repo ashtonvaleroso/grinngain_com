@@ -1,0 +1,39 @@
+Date : 2024-05-09 21:27:51
+Directory : c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com
+Total : 10 files,  1287 codes, 15 comments, 96 blanks, all 1398 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| HTML     |          5 |        717 |          4 |         33 |        754 |
+| CSS      |          1 |        350 |          9 |         59 |        418 |
+| XML      |          4 |        220 |          2 |          4 |        226 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                          |         10 |      1,287 |         15 |         96 |      1,398 |
+| . (Files)                                                                                                  |          6 |      1,067 |         13 |         92 |      1,172 |
+| google_icons                                                                                               |          2 |          2 |          0 |          0 |          2 |
+| icons                                                                                                      |          2 |        218 |          2 |          4 |        224 |
++------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                   | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\about.html                                        | HTML     |        122 |          0 |          6 |        128 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\contact.html                                      | HTML     |        138 |          0 |          7 |        145 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\early-access.html                                 | HTML     |        238 |          0 |          7 |        245 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\google_icons\close_FILL0_wght400_GRAD0_opsz24.svg | XML      |          1 |          0 |          0 |          1 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\google_icons\menu_FILL0_wght400_GRAD0_opsz24.svg  | XML      |          1 |          0 |          0 |          1 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\icons\green_icon.svg                              | XML      |        109 |          1 |          2 |        112 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\icons\white_icon.svg                              | XML      |        109 |          1 |          2 |        112 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\index.html                                        | HTML     |        171 |          0 |          6 |        177 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\style.css                                         | CSS      |        350 |          9 |         59 |        418 |
+| c:\Users\ashto\Desktop\Grin and Gain Files\grinngain_com\test.html                                         | HTML     |         48 |          4 |          7 |         59 |
+| Total                                                                                                      |          |      1,287 |         15 |         96 |      1,398 |
++------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

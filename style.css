@@ -406,13 +406,41 @@ footer a:hover{
     margin: 0 auto;
 }
 
-.instructions p {
-    font-size: 14pt; text-align: left;
+.instructions p,.instructions li {
+    color: white;
+    font-size: 18pt;
+    text-align: left;
 }
 
 .instructions ol {
-    font-size: 14pt;
+    color: white;
     text-align: left;
     list-style-type: decimal;
     padding-left: 30pt;
+}
+
+.about-page {
+    color: white;
+    line-height: 2;
+}
+
+.about-page p, .about-page li {
+    font-size: 18pt;
+}
+
+.about-page ul {
+    padding-left: 20pt;
+}
+
+.about-page h1 {
+    font-size: 36pt;
+    color: #63F794;
+}
+
+.about-page h2 {
+    font-size: 24pt;
+}
+
+.about-page div {
+    padding: 5rem 0;
 }

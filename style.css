@@ -397,7 +397,7 @@ footer a:hover{
 }
 
 .early-access-text h1 {
-    font-size: 30pt;
+    font-size: 24pt;
 }
 
 .early-access-text h2 {
@@ -412,6 +412,7 @@ footer a:hover{
     color: white;
     font-size: 18pt;
     text-align: left;
+    line-height: 2;
 }
 
 .instructions ol {
@@ -446,5 +447,39 @@ footer a:hover{
 }
 
 .about-page div {
-    padding: 5rem 0;
+    padding: 10rem 0;
+}
+.panel {
+    display: none;
+    padding: 0 18px;
+    overflow: hidden;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    border: 2px solid white;
+}
+
+
+.accordion::after {
+    content: '\002B';
+    font-weight: normal;
+    margin-left: 20pt;
+}
+
+.active::after {
+    content: "\2212";
+}
+
+.accordion-body {
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 75rem;
+    max-width: 90vw;
+    margin: 0 auto;
 }

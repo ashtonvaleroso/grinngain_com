@@ -250,6 +250,7 @@ button {
     border-color: grey;
     border-radius: 10px;
     width: 96%;
+    max-width: 70vw;
     height: 20pt;
     outline: none;
     font-size: 16pt;
@@ -260,6 +261,7 @@ button {
     width: 100%;
     font-size: 14pt;
     padding: 10px;
+    max-width: 73vw;
     height: auto;
     font-weight: normal;
 }
@@ -435,6 +437,8 @@ footer a:hover{
 .about-page h1 {
     font-size: 36pt;
     color: #63F794;
+    line-height: normal;
+    text-align: center;
 }
 
 .about-page h2 {

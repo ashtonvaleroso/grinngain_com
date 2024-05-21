@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grin&Gain - Simplified Fitness Tracking</title>
+    <title>Grin&Gain - About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/shortcut_icon.png">
     <style>
@@ -63,7 +63,7 @@
             sidebar.style.display = 'none';
         }
     </script>
-    <div class="content about-page center" style="width: 60rem; max-width: 90vw;">
+    <div class="content about-page center" style="width: 80rem; max-width: 90vw;">
         <div>
             <h1>About Us</h1>
             <br>
@@ -71,7 +71,8 @@
                 Fitness tracking designed to simplify your path to success.
                 <br><br>Track
                 workouts, achieve goals, and share
-                success.</p>
+                success.
+            </p>
         </div>
 
         <div>
@@ -135,73 +136,11 @@
                     href="https://www.instagram.com/grinngain" target="_blank">Instagram</a> and <a
                     href="https://twitter.com/grinngain" target="_blank">Twitter</a> for fitness tips, updates, and
                 inspiration.</p>
-            <div class="center-text" style="padding: 0;"><a href="contact.html"><button>Contact Us</button></a></div>
-
-            <p style="text-align: center; font-size: 24pt; font-weight: bold; line-height: normal; padding: 5rem 0;">
-                Thank you for choosing Grin&Gain.<br><br>Let's
-                grin, gain, and conquer our fitness goals together!</p>
+            <div class="center-text" style="padding: 100px 0;"><a href="contact.html"><button>Contact Us</button></a></div>
         </div>
 
 
     </div>
-    <footer>
-        <div class="wrap">
-            <div class="container">
-                <div style="padding-left: 10%;">
-                    <ul style="list-style-type: none;">
-                        <li>
-                            <a class="foot-item" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="foot-item" href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a class="foot-item" href="contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <a href="early-access.html">Early Access</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="centerContainer">
-                    Subscribe
-                    <p style="line-height: 3;">
-                    <form name="submit-to-google-sheet">
-                        <div style="height: 10pt;"></div>
-                        <input type="email" class="email-signup" placeholder="Email" name="Email">
-                        <br>
-                        <div style="height: 8pt;"></div>
-                        <button type="submit" class="signup-button">SIGN UP</button>
-                        <br>
-                        <span class="sub-span" id="msg"></span>
-                    </form>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwnuDb-CqZH2wVcGyLkXdb4RuoOKTO3YnRUTIIxf11z5Ml6I2cN6bl28k5knUEWEcf9/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-
-            form.addEventListener('submit', e => {
-                msg.innerHTML = "Sending..."
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                    .then(response => {
-                        msg.innerHTML = "Submitted!"
-                        setTimeout(() => {
-                            msg.innerHTML = ""
-                        }, 5000);
-                        form.reset()
-                    })
-                    .catch(error => console.error('Error!', error.message))
-            })
-        </script>
-    </footer>
 </body>
 
 </html>

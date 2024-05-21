@@ -260,10 +260,11 @@ button {
 .signup-button {
     width: 100%;
     font-size: 14pt;
-    padding: 10px;
+    padding: 10px 0;
     max-width: 73vw;
     height: auto;
-    font-weight: normal;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .home-button {
@@ -272,8 +273,13 @@ button {
     padding-top: 10px;
 }
 
-.darkened-background {
+.darkened-background-50 {
     background-color: rgba(0, 0, 0, .5);
+}
+
+.darkened-background-25 {
+    
+    background-color: rgba(0, 0, 0, .25);
 }
 
 .rounded-rectangle-40 {
@@ -315,35 +321,39 @@ button {
 
 .small-input {
     font-family: heebo;
-    background-color: white;
+    background-color: #272727;
     border: solid;
-    border-color: black;
-    border-radius: 10px;
+    border-width: 1px;
+    border-color: #404040;
+    border-radius: 5px;
     width: 40rem;
     max-width: 80vw;
     height: 20pt;
     outline: none;
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 7px;
+    margin: 10px;
 }
 
 .large-input {
     font-family: heebo;
-    background-color: white;
+    background-color: #272727;
     border: solid;
-    border-color: black;
-    border-radius: 10px;
+    border-width: 1px;
+    border-color: #404040;
+    border-radius: 5px;
     width: 40rem;
     max-width: 80vw;
     height: 20rem;
     outline: none;
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 7px;
+    margin: 10px;
 }
 
 .submit-button {
     font-family: heebo;
-    text-transform: uppercase;
+    font-weight: bold;
     font-size: 14pt;
     height: 30pt;
     width: 41rem;
@@ -351,7 +361,7 @@ button {
     background-color: #63F794;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .sub-span {
@@ -482,4 +492,78 @@ footer a:hover{
     width: 75rem;
     max-width: 90vw;
     margin: 0 auto;
+}
+
+.about-page .team-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.about-page .team-member {
+    max-width: 30%;
+    text-align: center;
+    padding: 0;
+}
+
+.textinput {
+    font-family: heebo;
+    background-color: #272727;
+    border: solid;
+    border-width: 1px;
+    border-color: #404040;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+    height: 20pt;
+    outline: none;
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 7px;
+    margin: 5px;
+}
+
+.square-button {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1 /1;
+    background-color: #272727;
+    border: solid white 1px;
+}
+
+.square-button:hover {
+    background-color: #404040;
+}
+
+
+.forgot-password {
+    display: inline;
+    font-size: 12pt;
+    text-align: right;
+    margin-top: -10px;
+}
+
+.forgot-password a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.textinput {
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+#forgot-password-container {
+    display: block;
+}
+
+#already-account-text a {
+    color: blue;
+    text-decoration: none;
+}
+
+#confirm-password {
+    display: none;
 }

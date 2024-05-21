@@ -8,7 +8,8 @@ import {
     signInWithRedirect,
     getRedirectResult,
     GoogleAuthProvider,
-    FacebookAuthProvider
+    FacebookAuthProvider,
+    onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { isSignIn } from "./early-access.js";
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -33,6 +34,17 @@ const fprovider = new FacebookAuthProvider();
 const auth = getAuth();
 const submit = document.getElementById('submit');
 
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/auth.user
+        const uid = user.uid;
+        window.location.href = "download.html";
+        // ...
+    } else {
+        document.body.style.display = 'block';
+    }
+});
 
 submit.addEventListener('click', function (event) {
     event.preventDefault()
@@ -120,3 +132,4 @@ facebookButton.addEventListener('click', function () {
     signInWithRedirect(auth, fprovider);
     signInType = 'facebook';
 });
+

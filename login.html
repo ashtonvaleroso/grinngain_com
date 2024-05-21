@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grin&Gain - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icons/shortcut_icon.png">
+    <script type="module" src="early-access.js"></script>
+    <script type="module" src="register.js" defer></script>
+    <style>
+        html, body {
+            overflow: hidden;
+        }
+        body {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="home-button">
+            <h2 style="font-size: 16pt;">
+                <img src="icons/green_icon.svg" alt="Grin&Gain Logo" height="16pt">Grin&Gain
+            </h2>
+        </a>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30pt" width="30pt" viewBox="0 -960 960 960"
+                    width="35pt">
+                    <path fill="#63f794"
+                        d="M480-424L284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
+                </svg>
+            </li>
+            <li><a class="nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
+            <li><a class="nav-item" href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="early-button">Alpha Access</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a class="nav-item" href="about.html">About</a></li>
+            <li class="hideOnMobile"><a class="nav-item" href="contact.html">Contact</a></li>
+            <li class="hideOnMobile"><a href="login.html" class="early-button">Alpha Access</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30pt" width="30pt" viewBox="0 -960 960 960" width="24">
+                    <path fill="#63f794"
+                        d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z" />
+                </svg>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+    <div class="content relative" style="padding: 0; margin: 0;">
+        <img src="images/early_access_background.png" alt="Early Access Background" id="early_access_background" style="height: 100vh; padding: 0;">
+        <div class="centered center-text-align darkened-background-50 rounded-rectangle-40" style="padding: 10px;">
+            <div style="height: 20pt;"></div>
+            <h2 style="font-size: 30pt;">
+                <img src="icons/green_icon.svg" alt="Grin&Gain Logo" height="30pt">Grin&Gain
+            </h2>
+            <div style="height: 20pt;"></div>
+            <p id="form-title">Sign into your account</p>
+
+            <form>
+                <input type="email" class="textinput" placeholder="Email" id="email" required>
+                <input type="password" class="textinput" placeholder="Password" id="password" required>
+                <div id="forgot-password-container" style="text-align: end; height: 20pt; padding-right: 20pt;">
+                    <p id="forgot-password" class="forgot-password"><a href="forgot-password.html">Forgot Password?</a></p>
+                </div>
+                <input type="password" class="textinput" placeholder="Confirm Password" id="confirm-password">
+                <div style="height: 10pt;"></div>
+                <button id="submit" type="submit" class="signup-button" style="width: 85%;">Sign In</button>
+            </form>
+
+            <div style="display: flex; align-items: center; width: 80%; margin: auto; padding: 15px;">
+                <div style="flex: 1; height: 1px; background-color: grey;"></div>
+                <p style="margin: 10px; font-size: 14pt; color: grey;">Or continue with</p>
+                <div style="flex: 1; height: 1px; background-color: grey;"></div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <button id="google-signin" class="square-button"><img src="images/google.png" alt="sign in with google"
+                        width="40px"></button>
+                <div style="width: 20px;"></div>
+                <button id="facebook-signin" class="square-button"><img src="images/facebook.png"
+                        alt="sign in with facebook" width="40px"></button>
+            </div>
+            <br>
+            <p id="already-account-text" style="font-size: 14pt; color: grey;">Don't have an account? <a href="#"
+                    id="signInUp">Register now</a></p>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -27,7 +27,7 @@ onAuthStateChanged(auth, (user) => {
         // User is signed out
         // ...
         document.body.style.display = 'none';
-        window.location.href = "early-access.html";
+        window.location.href = "login.html";
     }
 });
 
@@ -41,5 +41,5 @@ logout.addEventListener('click', function () {
         // An error happened.
         alert(error)
     });
-    window.location.href = "early-access.html";
+    window.location.href = "login.html";
 });

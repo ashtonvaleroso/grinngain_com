@@ -3,7 +3,7 @@
     font-family: Heebo;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -278,7 +278,7 @@ button {
 }
 
 .darkened-background-25 {
-    
+
     background-color: rgba(0, 0, 0, .25);
 }
 
@@ -311,9 +311,10 @@ button {
 }
 
 @media(max-width: 500px) {
-    .hideOnMobile{
+    .hideOnMobile {
         display: none;
     }
+
     .menu-button {
         display: block;
     }
@@ -382,12 +383,12 @@ footer {
     flex-direction: row;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #63F794;
 }
 
-footer a:hover{
+footer a:hover {
     color: white;
 }
 
@@ -418,18 +419,39 @@ footer a:hover{
     margin: 0 auto;
 }
 
-.instructions p,.instructions li {
+.instructions h1 {
+    font-size: 36pt;
+}
+
+.instructions h2 {
+    font-size: 24pt;
+}
+
+.instructions p,
+.instructions li {
     color: white;
     font-size: 18pt;
     text-align: left;
     line-height: 2;
 }
 
-.instructions ol {
+.instructions ol, .instructions ul {
     color: white;
     text-align: left;
-    list-style-type: decimal;
     padding-left: 30pt;
+}
+
+.instructions ol {
+    
+    list-style-type: decimal;
+}
+
+.instructions iframe {
+    max-width: 70vw;
+}
+
+.instructions img {
+    max-width: 70vw;
 }
 
 .about-page {
@@ -437,7 +459,8 @@ footer a:hover{
     line-height: 2;
 }
 
-.about-page p, .about-page li {
+.about-page p,
+.about-page li {
     font-size: 18pt;
 }
 
@@ -459,6 +482,7 @@ footer a:hover{
 .about-page div {
     padding: 10rem 0;
 }
+
 .panel {
     display: none;
     padding: 0 18px;
@@ -566,4 +590,15 @@ footer a:hover{
 
 #confirm-password {
     display: none;
+}
+
+.pversionlist {
+    color: white;
+    font-size: 20pt;
+    width: 80rem;
+    max-width: 80vw;
+}
+
+.pversionlist, .pversionlist th, .pversionlist td {
+    border: 1px solid white;
 }

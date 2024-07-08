@@ -1,0 +1,124 @@
+:root {
+    --primary: #63f794;
+}
+
+@font-face {
+    src: url(fonts\Heebo-VariableFont_wght.ttf);
+    font-family: Heebo;
+}
+
+body,
+html {
+    margin: 0;
+    background-color: white;
+    font-family: heebo;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.title {
+    color: var(--primary);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.request-button {
+    margin: auto;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    display: block;
+    padding: 15pt 25pt;
+    font-size: 18pt;
+    font-weight: bold;
+    border-radius: 100pt;
+    cursor: pointer;
+}
+
+.large-gif {
+    display: block;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large-image {
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: absolute;
+    background-color: #dcdcdc;
+    width: 100vw;
+}
+
+.margin-center {
+    width: 90vw;
+    /* max-width: 50rem; */
+    margin: auto;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.reverse-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.wrap-item {
+    display: block;
+    flex: 1 1 40vh;
+}
+
+.area-padding {
+    padding: 50pt 0;
+}
+
+.height-limit {
+    max-height: 90vh;
+}
+
+.text-block {
+    max-width: 400pt;
+    margin: auto;
+}
+
+.early-access-text-field {
+    font-size: 20pt;
+    border: none;
+    padding: 10pt;
+    border-radius: 100pt;
+    background-color: #dcdcdc;
+    width: 80%;
+    max-width: 400px;
+}
+
+.early-access-form {
+    text-align: center;
+}
+
+.early-access-form, input {
+    display: inline-block;
+    margin: 7.5pt 0;
+}
+
+.vertical-align {
+    padding: 10vh 0;
+}

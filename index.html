@@ -5,115 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grin&Gain - Workout Tracker App for Weightlifting, Calisthenics, and More</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/shortcut_icon.png">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="general_styles.css">
 </head>
-<!-- asldkfjsdlkfjsladfjalsdf -->
+
 <body>
-    <nav class="navbar" style="justify-content: end;">
-        <ul class="sidebar">
-            <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30pt" width="30pt"
-                    viewBox="0 -960 960 960" width="35pt">
-                    <path fill="#63F794"
-                        d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z" />
-                </svg></li>
-            <li>
-                <a class="nav-item" href="about.html">About</a>
-            </li>
-            <li>
-                <a class="nav-item" href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="login.html" class="early-button">Alpha Access</a>
-            </li>
-        </ul>
-        <ul>
-            <li class="hideOnMobile">
-                <a class="nav-item" href="about.html">About</a>
-            </li>
-            <li class="hideOnMobile">
-                <a class="nav-item" href="contact.html">Contact</a>
-            </li>
-            <li class="hideOnMobile">
-                <a href="login.html" class="early-button">Alpha Access</a>
-            </li>
-            <li class="menu-button" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="30pt"
-                    width="30pt" viewBox="0 -960 960 960" width="24">
-                    <path fill="#63F794"
-                        d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z" />
-                </svg></li>
-        </ul>
-    </nav>
-    <script>
-        function showSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex';
-        }
-        function hideSidebar() {
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none';
-        }
-    </script>
-    <div class="content">
-        <div class="wrap">
-            <div class="container">
-                <div class="centerContainer">
-                    <h2><img src="icons/green_icon.svg" alt="" height="34pt">Grin&Gain</h2>
-                    <h1 id="mainTitle" style="line-height: 1;">Simple Fitness Tracking</h1>
-                    <p style="padding: 15px 0">From novices to elite athletes, Grin&Gain simplifies fitness tracking for all levels. Track
-                        progress, share routines, and join our fitness community.</p>
-                    <button onclick="location.href='login.html'">Get Started<img
-                            src="icons/white_icon.svg" alt="" height="16pt"></button>
-                </div>
-            </div>
-            <div class="container"><img src="images/hero_image.png" alt="" class="hero_image"></div>
+    <h1 class="title" style="font-size: 26pt; margin-left: 15pt;"><img src="icons/green_icon.svg" alt=""
+            height="24pt">Grin&Gain</h1>
+    <div class="margin-center">
+        <div class="area-padding">
+            <h1 class="center-text">Track Progress<br>
+                Share Success<br>
+                Get Stronger Together</h1>
+            <p class="center-text text-block">Grin&Gain is a social fitness app designed to make achieving your fitness
+                goals simple and
+                motivating.</p>
+            <br>
+            <button class="request-button" onclick="location.href='early_access.html'">Request Early Access</button>
         </div>
-        <div class="reverseWrap">
-            <div class="container">
-                <div class="gif_row">
-                    <img src="gifs/exercise_player.gif" alt="" class="gif_image_row">
-                    <img src="gifs/exercise_queue.gif" alt="" class="gif_image_row">
-                </div>
-            </div>
-            <div class="container">
-                <div class="centerContainer">
-                    <h3 id="parText">Power Through Workouts with the Exercise Player</h3>
-                    <p id="parText">Navigate through and log exercises effortlessly with the Exercise Player.</p>
-                </div>
+        <div class="wrap area-padding">
+            <div class="wrap-item center-element"><img class="large-gif height-limit" src="gifs/exercise_player.gif"
+                    alt=""></div>
+            <div class="wrap-item">
+                <h2 class="text-block">Track Workouts</h2>
+                <p class="text-block">Grin&Gain offers a unique and concise fitness tracker designed to minimize user
+                    input.</p>
             </div>
         </div>
-        <div class="wrap">
-            <div class="container">
-                <div class="centerContainer">
-                    <h3 id="parText">Track Progress through Insights and Statistics</h3>
-                    <p id="parText">Gain insights with progress tracking features, offering detailed graphs and
-                        statistics.</p>
-                </div>
+        <div class="reverse-wrap area-padding">
+            <div class="wrap-item">
+                <h2 class="text-block">Connect & Discover</h2>
+                <p class="text-block">Share and explore exercises, routines, and programs curated by athletes around the
+                    world.</p>
             </div>
-            <div class="container">
-                <img src="gifs/exercise_graph.gif" alt="" id="exercise_graph" style="min-width: 400px; width: 50vw;">
-            </div>
-        </div>
-        <div class="reverseWrap">
-            <div class="container">
-                <img src="gifs/custom_exercise.gif" alt="" id="exercise_graph" style="min-width: 400px; width: 50vw;">
-            </div>
-            <div class="container">
-                <div class="centerContainer">
-                    <h3 id="parText">Create Unlimited Custom Exercises and Routines</h3>
-                    <p id="parText">Track any exercise and curate a personalized database tailored to your goals.</p>
-                </div>
+            <div class="wrap-item">
+                <div class="center-element"><img class="large-image height-limit" src="images/home_profile_pages.png"
+                        alt=""></div>
             </div>
         </div>
-        <div class="recall">
-            <h2 id="tagline">Simplify your fitness experience</h2>
-            <button onclick="location.href='login.html'">Get Started<img src="icons/white_icon.svg" alt=""
-                    height="16pt" style="max-width: 90vw;"></button>
+        <div class="wrap area-padding">
+            <div class="wrap-item center-element"><img class="large-gif height-limit" src="gifs/exercise_graphs.gif"
+                    alt=""></div>
+            <div class="wrap-item">
+                <h2 class="text-block">Gain Insights</h2>
+                <p class="text-block">View your progress with detailed graphs and statistics.</p>
+            </div>
+        </div>
+        <div style="padding-top: 50pt; padding-bottom: 100pt;">
+            <h1 class="center-text">Get Started Today</h1>
+            <button class="request-button" onclick="location.href='early_access.html'">Request Early Access</button>
         </div>
     </div>
+
+    <footer style="padding-top: 25pt;" class="center-text">
+        <h2>Get In Touch</h2>
+        <p>
+            General Inquiries<br>
+            info@grinngain.com<br>
+            <br>
+            Customer Support<br>
+            support@grinngain.com
+            <br>
+            <br>
+            <span style="font-size: 12pt;">Copyright © 2024 Grin&Gain. All Rights Reserved</span>
+        </p>
+    </footer>
 </body>
 
 </html>

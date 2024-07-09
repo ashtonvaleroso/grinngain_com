@@ -23,6 +23,16 @@
             <input class="early-access-text-field" type="email" name="email" id="" placeholder="Email" required>
             <br>
             <div style="max-width: 400px; width: 80%; margin: auto;">
+                <label for="platform">Are you an iOS or Android user?</label>
+                <br>
+                <select name="platform" id="platform" class="early-access-text-field" style="font-size: 14pt;" required>
+                    <option value="" disabled selected>Select your platform</option>
+                    <option value="iOS">iOS</option>
+                    <option value="Android">Android</option>
+                </select>
+            </div>
+            <br>
+            <div style="max-width: 400px; width: 80%; margin: auto;">
                 <input type="checkbox" id="terms" name="terms and privacy" style="transform: scale(1.5); padding: 0 15pt;" required>
                 <label for="terms">I agree to the <a href="terms_conditions.html" target="_blank">Terms and Conditions</a> and to the  <a href="privacy_policy.html" target="_blank">Privacy Policy</a></label>
             </div>

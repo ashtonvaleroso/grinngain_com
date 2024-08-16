@@ -5,7 +5,7 @@
 @font-face {
     src: url(fonts\Heebo-VariableFont_wght.ttf);
     font-family: Heebo;
-    font-weight: 1 1000;
+    font-weight: 1 normal;
 }
 
 body,

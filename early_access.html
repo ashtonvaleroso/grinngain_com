@@ -20,7 +20,8 @@
     <div class="center-text vertical-align">
         <h1>Request Early Access</h1>
         <form name="submit-to-google-sheet" class="early-access-form">
-            <input class="early-access-text-field" type="text" name="first name" id="" placeholder="First name" required>
+            <input class="early-access-text-field" type="text" name="first name" id="" placeholder="First name"
+                required>
             <br>
             <input class="early-access-text-field" type="text" name="last name" id="" placeholder="Last name" required>
             <br>
@@ -37,22 +38,65 @@
             </div>
             <br>
             <div style="max-width: 400px; width: 80%; margin: auto;">
-                <input type="checkbox" id="terms" name="terms and privacy" style="transform: scale(1.5); padding: 0 15pt;" required>
-                <label for="terms">I agree to the <a href="terms_conditions.html" target="_blank">Terms and Conditions</a> and to the  <a href="privacy_policy.html" target="_blank">Privacy Policy</a></label>
+                <label for="platform">Where did you hear about us?</label>
+                <br>
+                <select name="where" id="where" class="early-access-text-field" style="font-size: 14pt;" required
+                    onchange="handleOtherSelection(this)">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Purdue Co-Rec">Purdue Co-Rec</option>
+                    <option value="Campus Flyer">Campus Flyer</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <!-- Hidden 'Please specify' field -->
+                <div id="otherSpecifyField" style="display: none; margin-top: 10px;">
+                    <label for="otherText">Please specify:</label>
+                    <input type="text" id="otherText" name="otherText" class="early-access-text-field"
+                        style="font-size: 14pt;" required>
+                </div>
+            </div>
+
+            <script>
+                function handleOtherSelection(selectElement) {
+                    var otherField = document.getElementById('otherSpecifyField');
+                    var otherText = document.getElementById('otherText');
+
+                    if (selectElement.value === 'Other') {
+                        otherField.style.display = 'block';
+                        otherText.setAttribute('required', 'required');
+                    } else {
+                        otherField.style.display = 'none';
+                        otherText.removeAttribute('required');
+                    }
+                }
+            </script>
+
+            <br>
+            <div style="max-width: 400px; width: 80%; margin: auto;">
+                <input type="checkbox" id="terms" name="terms and privacy"
+                    style="transform: scale(1.5); padding: 0 15pt;" required>
+                <label for="terms">I agree to the <a href="terms_conditions.html" target="_blank">Terms and
+                        Conditions</a> and to the <a href="privacy_policy.html" target="_blank">Privacy
+                        Policy</a></label>
             </div>
             <br>
-            <button id="submit-button" class="request-button" type="submit" style="padding: 7.5pt 0; width: 80%; max-width: 400px;">Submit</button>
+            <button id="submit-button" class="request-button" type="submit"
+                style="padding: 7.5pt 0; width: 80%; max-width: 400px;">Submit</button>
         </form>
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbwN06UABhkG8KoEgm_MRS2kbgaS3dvRVO5VJPfBQ-KPIER9nJugn2snKHJoDngVeQj5Ow/exec'
             const form = document.forms['submit-to-google-sheet']
             const submitButton = document.getElementById('submit-button')
-        
+
             form.addEventListener('submit', e => {
                 e.preventDefault()
                 submitButton.innerHTML = "Sending..."
                 submitButton.style.backgroundColor = "lightblue"
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
                         submitButton.innerHTML = "Submitted"
                         submitButton.style.color = "black"

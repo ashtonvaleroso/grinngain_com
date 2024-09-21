@@ -7,7 +7,6 @@
             "namespace": "android_app",
             "package_name": "com.grinngain.app",
             "sha256_cert_fingerprints": [
-                "48:7f:67:02:08:78:fa:ba:4d:35:40:26:e5:d5:e0:7f:82:53:52:93:5f:01:29:f1:e8:56:3a:7a:39:8a:c4:f1",
                 "8c:d1:8d:3d:80:c8:a6:d5:23:42:b1:33:ea:98:91:d7:a0:79:2c:77:54:17:2b:10:8e:d7:f9:02:d8:2d:48:0c"
             ]
         }

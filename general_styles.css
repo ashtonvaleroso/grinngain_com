@@ -23,16 +23,19 @@ p {
 }
 
 .request-button {
-    margin: auto;
-    color: white;
-    background-color: var(--primary);
-    border: none;
-    display: block;
-    padding: 15pt 25pt;
     font-size: 18pt;
-    font-weight: bold;
-    border-radius: 100pt;
+    padding: 7.5pt 0;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    /* Add this line to make the button round */
+    background-color: #63f794;
+    color: #fff;
     cursor: pointer;
+}
+
+.request-button:hover {
+    background-color: #4cbd72;
 }
 
 .large-gif {
@@ -95,21 +98,30 @@ footer {
     margin: auto;
 }
 
-.early-access-text-field {
-    font-size: 20pt;
-    border: none;
-    padding: 10pt;
-    border-radius: 100pt;
-    background-color: #dcdcdc;
-    width: 80%;
-    max-width: 400px;
-}
-
 .early-access-form {
     text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20pt;
+    border: 1pt solid #ccc;
+    border-radius: 10pt;
+    box-shadow: 0 0 10pt rgba(0, 0, 0, 0.1);
 }
 
-.early-access-form, input {
+.early-access-text-field {
+    font-size: 14pt;
+    padding: 10pt;
+    border: none;
+    border-radius: 50px;
+    /* Add this line to make the select inputs round */
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10pt;
+}
+
+.early-access-form,
+input {
     display: inline-block;
     margin: 7.5pt 0;
 }

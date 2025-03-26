@@ -25,13 +25,17 @@ p {
 .request-button {
     font-size: 18pt;
     padding: 7.5pt 0;
-    width: 100%;
+    width: 100vw;
+    max-width: 80%;
+    font-weight: bold;
     border: none;
     border-radius: 50px;
-    /* Add this line to make the button round */
     background-color: #63f794;
     color: #fff;
     cursor: pointer;
+    display: block; /* Makes it a block-level element */
+    margin: 0 auto; /* Centers it horizontally */
+    text-align: center;
 }
 
 .request-button:hover {

@@ -134,20 +134,42 @@ input {
     padding: 10vh 0;
 }
 
-.join-button {
-    background-color: #63f794; /* Base green */
-    color: white;
-    padding: 10px 24px;
-    border: none;
-    border-radius: 999px; /* Pill shape */
+.join-link {
+    color: rgb(71, 71, 71); /* Subtle grey */
     font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 10px;
+    transition: color 0.2s ease;
   }
   
-  .join-button:hover {
-    background-color: #4cbd72; /* Darker green on hover */
+  .header-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 15pt;
   }
+  
+  @media (max-width: 600px) {
+    .header-container {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  .title {
+    font-size: 26pt;
+    margin: 0;
+  }
+  
+  .logo-group {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 8px;
+  }
+  
+
   

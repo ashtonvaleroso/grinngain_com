@@ -133,3 +133,21 @@ input {
 .vertical-align {
     padding: 10vh 0;
 }
+
+.join-button {
+    background-color: #63f794; /* Base green */
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 999px; /* Pill shape */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .join-button:hover {
+    background-color: #4cbd72; /* Darker green on hover */
+  }
+  

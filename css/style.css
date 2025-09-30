@@ -140,11 +140,15 @@ i {
 
 /* Hero */
 .hero{
-    height: fit-content;
+    height: 90vh;
     background-image: url('../images/hero-bg.png');
     background-size: cover;
     color: white;
-    padding: 10px 20px 10px;
+}
+
+.hero .container.grid{
+    width: 85%;
+    justify-self: center;
 }
 
 .hero h1 {
@@ -195,7 +199,7 @@ i {
 
 .hero img{
     height: auto;
-    width: 90%;
+    width: 100%;
     justify-self:flex-start;
 }
 
@@ -543,6 +547,19 @@ main
         grid-template-columns: 1fr !important;
     }
 
+    /* Hero Mobile Formatting */
+    .hero {
+        padding: 40px 20px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .download {
+        justify-content: center !important;
+        padding-left: 0 !important;
+    }
+
+    
     .features .flip {
         grid-template-columns: 1fr !important;
     }

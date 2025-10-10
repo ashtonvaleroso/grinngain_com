@@ -204,7 +204,8 @@ i {
 }
 
 .hero::before,
-.head::before {
+.head::before,
+.head-empty::before {
     background-color: black;
     content: '';
     position: absolute;
@@ -372,7 +373,7 @@ main
 }
 
 .content {
-    width: 80%;
+    width: 95%;
     justify-self: center;
     padding: 20px 0 80px;
 }
@@ -395,8 +396,11 @@ main
     font-weight: 700;
 }
 
-.content #toc ul{
+.content .toc ul{
     list-style: none;
+    padding-inline-start: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .table-container {
@@ -481,7 +485,7 @@ main
     font-weight: 300 !important;
 }
 
-.team-title {
+.title {
     padding: 0 80px 40px;
 }
 
@@ -506,6 +510,8 @@ main
     color: black;
 }
 
+
+/* Resources Page */
 .articles {
     padding: 80px 0;
 }
@@ -514,7 +520,29 @@ main
     align-items: start;
 }
 
+.article-card img {
+    border-radius: 10px;
+}
 
+.article-card p {
+    padding-bottom: 16px;
+}
+
+
+/* Article Pages */
+.article {
+    width: 90%;
+    justify-self: center;
+}
+
+.article h1 {
+    font-size: 36px !important;
+    font-weight: 500 ;
+    line-height: 1.2;
+    padding: 20px 0;
+}
+
+/* Access Page */
 .access img {
     width: 100%;
 }
@@ -549,7 +577,7 @@ main
 
     /* Hero Mobile Formatting */
     .hero {
-        padding: 40px 20px;
+        padding: 40px 0px;
         height: fit-content;
         text-align: center;
     }
@@ -559,13 +587,15 @@ main
         padding-left: 0 !important;
     }
 
-    
-    .features .flip {
-        grid-template-columns: 1fr !important;
-    }
 
     .features .description {
         order: 1 !important;
+        padding-left: 0 !important;
+        width: 100%;
+    }
+
+    .features .flip {
+        grid-template-columns: 1fr !important;
     }
 
     .features .feature-card {
@@ -633,25 +663,34 @@ main
     .download .lg-btn {
         font-size: 14px !important;
         padding: 10px 20px !important;
-    };
+    }
 
-    .features-heading {
+    .title {
+        padding: 0 20px 40px;
+    }
+
+    .head{
+        padding: 40px 20px 60px;
         text-align: center;
     }
 
-    .features .description {
-        padding-left: 0 !important;
+    .head h1 {
+        font-size: 28px !important;
+    }
+
+    .about.head {
+        text-align: left !important;
+        padding: 40px 0px 60px !important;
+    }
+
+    main {
         width: 100%;
-        text-align: center !important;
+    }    
+    
+    .articles .grid {
+        gap: 60px;
     }
-
-    .head {
-        padding: 40px 40px 80px;
-    }
-
-    .team-title {
-        padding: 0 0 40px;
-    }
+    
 }
 
 /* Mobile */

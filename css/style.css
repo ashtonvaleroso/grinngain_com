@@ -2,7 +2,19 @@
     --primary-color: #1CDA5B;
     --brand-color: #3DF57A;
     --secondary-color: #0BAA3F;
+
+    --text-size-smaller-2: 0.6875rem;
+    --text-size-smaller: 0.8125rem;
+    --text-size-base: 1rem;
+    --text-size-large: 1.125rem;
+    --text-size-larger: 1.25rem;
+    --text-size-larger-2: 1.5rem;
+    --text-size-larger-3: 2rem;
+    --text-size-larger-4: 2.5rem;
+    --text-size-larger-5: 3rem;
 }
+
+
 
 * {
     box-sizing: border-box;
@@ -26,7 +38,7 @@ h2 {
 p{
     padding-bottom: 10px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .text-secondary {
@@ -258,7 +270,7 @@ main
 
 .features .description p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
 .feature-card {
@@ -355,6 +367,7 @@ main
 
 .footer .copy {
     text-align: center;
+    padding: 20px 0 40px;
 }
 
 /* Privacy Policy Page */
@@ -657,6 +670,27 @@ main
 
     .navbar {
         width: 100%;
+        padding: 0;
+        height: 70px
+    }
+
+
+    .navbar .container {
+        background-color: black;
+        border-top: #919191;
+        border-bottom: white;
+        border-width: 0.5px;
+        border-bottom-style: outset;
+        border-top-style: inset;
+        border-top-width: 55;
+        border-radius: 0;
+        height: 70px;
+    }   
+
+    .hero::before,
+    .head::before,
+    .head-empty::before {
+        height: 80px;
     }
 
     /* Hero Mobile Formatting */
@@ -676,7 +710,14 @@ main
         order: 1 !important;
         padding-left: 0 !important;
         width: 100%;
+        text-align: center;
     }
+
+    .features .description p {
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0 16px 20px;
+}
 
     .features .flip {
         grid-template-columns: 1fr !important;
@@ -692,7 +733,7 @@ main
 
     .navbar #navy {
         position: absolute;
-        top: 80%;
+        top: 100%;
         left: 10%;
         height: 0;
         width: 80%;
@@ -744,9 +785,24 @@ main
         display: inline;
     }
 
+    .features-heading{
+        font-weight: 600;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .download-description {
+        text-align: center;
+    }
+
     .download .lg-btn {
         font-size: 14px !important;
         padding: 10px 20px !important;
+    }
+
+    .download-btns
+    {
+        gap: 20px;
     }
 
     .title {
@@ -774,7 +830,37 @@ main
     .articles .grid {
         gap: 60px;
     }
-    
+
+    .article {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .links {
+        text-align: center;
+    }
+
+    .footer ul {
+        justify-content: center;
+    }
+
+    .footer .pages {
+        padding-bottom: 30px;
+    }
+
+    .footer .grid {
+        gap: 10px;
+    }
+
+    .contact a.logo {
+        display: block;
+        justify-self: center;
+    }
+        
 }
 
 /* Mobile */

@@ -58,6 +58,11 @@ img{
     font-weight: 500;
 }
 
+.highlight-3 {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
 .logo-lg {
     height: 5rem;
     width: auto;
@@ -504,6 +509,10 @@ main
     padding: 0 80px 40px;
 }
 
+.team-members {
+    border-bottom: 1px solid #e0e0e0;
+}
+
 .team-members .grid {
     grid-template-columns: 30% 70%;
     align-items: center;
@@ -517,8 +526,15 @@ main
     border-radius: 10px;
 }
 
+.member-card h3 {
+    font-size: larger;
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+}
+
+
 .join {
-    padding-bottom: 120px;
+    padding: 0 20px 120px;
 }
 
 .join a.lg-btn {
@@ -823,6 +839,19 @@ main
         padding: 40px 0px 60px !important;
     }
 
+    .member-card.container.grid {
+        gap: 0;
+    }
+
+    .member-card {
+        text-align: center;
+    }
+
+    .member-card img{
+        width: 50vw;
+        justify-self: center;
+    }
+
     main {
         width: 100%;
     }    
@@ -832,7 +861,8 @@ main
     }
 
     .article {
-        width: 90%;
+        width: 100%;
+        padding: 0 20px;
         justify-self: center;
     }
 

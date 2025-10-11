@@ -594,6 +594,33 @@ main
     margin: 15px 0;
 }
 
+.feature-guide img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.feature-guide nav {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.feature-guide nav ul {
+    list-style: none;
+    padding: 0;
+}
+.feature-guide nav li {
+    margin: 8px 0;
+}
+.feature-guide nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
 
 /* Access Page */
 .access img {

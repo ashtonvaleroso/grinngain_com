@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide | Grin&Gain</title>
+    <link rel="shortcut icon" href="icons/shortcut_icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar"> 
+        <div class="container flex">
+            <a class="logo" href="index.html"><img src="images/Grin&Gain.png"></a>
+            <input type="checkbox" id="check">
+            <nav id="navy">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    <a href="access.html" class="btn mobile-btn">Get Early Access</a>
+                </ul>
+            </nav>
+            <a href="access.html" class="btn desktop-btn">Get Early Access</a>
+
+            
+            <label for="check" class="icons">
+                <i class="bi bi-list" id="menu" style="color: #AFAFAF;"></i>
+                <i class="bi bi-x-lg" id="close" style="color: #AFAFAF;"></i>
+
+            </label>
+        </div>
+    </div>
+
+
+    <main>
+        <img src="images/Featured Empty.png" alt="Grin&Gain Feature Guide">
+        <div class="article feature-guide">
+            <h1>Grin&Gain Feature Guide</h1> 
+            <div class="article-data container flex">
+                <p>By Ashton Valeroso</p> 
+                <span class="separator">•</span>
+                <p class="date">August 19, 2025</p>
+            </div>
+
+            <div class="content">
+                <section id="introduction">
+                    <div class="intro-section">
+                        <p>Welcome to the <strong>Grin&Gain Feature Guide!</strong> This guide provides an overview of the app's key features and will help you learn how to track your workouts, 
+                            monitor your progress, and gain valuable insights into your training. By the end of this guide, you'll be able to confidently use Grin&Gain to optimize your training 
+                            and achieve your fitness goals.</p>
+                    </div>
+                </section>
+                <section class="toc">
+                    <ul>
+                        <li><a href="#tracking-exercises">Tracking and Adjusting Exercises</a></li>
+                        <li><a href="#exercise-player">Using the Exercise Player</a></li>
+                        <li><a href="#statistics">Understanding Statistics and Graphs</a></li>
+                        <li><a href="#scheduling">Scheduling and Notifications</a></li>
+                        <li><a href="#backing-up">Backing Up Data</a></li>
+                    </ul>
+                </section>
+
+                <section id="tracking-exercises">
+                    <h2>Tracking and Adjusting Exercises</h2>
+                    
+                    <p>The <strong>Exercise Dialog</strong> makes it easy to track and adjust any type of exercise. You can log weighted, bodyweight, cardio, and even custom progressions by choosing from different <strong>Exercise Types</strong> and <strong>Action Types</strong>.</p>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#exercise-types">Exercise Types</a></li>
+                            <li><a href="#action-types">Action Types</a></li>
+                            <li><a href="#difficulty">Difficulty</a></li>
+                            <li><a href="#individual-set-tracking">Individual Set Tracking</a></li>
+                            <li><a href="#adjustments">Adjustments</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <p>For simplicity, the default mode assumes all sets use the same weight and reps. If you prefer more detail, you can enable <strong>Individual Set Tracking</strong> to record each set separately.</p>
+                    
+                    <p>To keep your training progressive, you can also set up <strong>personalized adjustments</strong> - either automatic or manual - to update your exercises for the next workout.</p>
+
+                    <h3 id="exercise-types">Exercise Types</h3>
+                    <p>Each exercise allows for different exercise types including weighted, bodyweight, and timed exercises. Exercise Types can be accessed by tapping the "Weight" button or your default exercise type found in the tracking tab in the exercise dialog. You can set your default exercise type in settings.</p>
+                    
+                    <img class="vertical" src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/exercise_types.png" alt="Exercise Types" class="feature-image">
+
+                    <h3 id="action-types">Action Types</h3>
+                    <p>The exercise <strong>Action Types</strong> can be accessed by tapping the "Reps" dropdown. The following Action Types are supported:</p>
+                    
+                    <ul>
+                        <li><strong>Reps</strong> – Count how many repetitions you perform (e.g., 12 squats).</li>
+                        <li><strong>Time</strong> – Track the duration with a timer (e.g., 30-second plank).</li>
+                        <li><strong>Text</strong> – Add a note or custom instruction (e.g., "Hold stretch until comfortable").</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/action_types.png" alt="Action Types" class="feature-image">
+
+                    <h3 id="difficulty">Difficulty</h3>
+                    <p><strong>Difficulty</strong> is a quick way to record how challenging an exercise felt — whether it was <strong>too hard</strong>, <strong>okay</strong>, or <strong>too easy</strong>. These ratings can also be used to make automatic adjustments to your workouts.</p>
+                    
+                    <p>We recommend using Difficulty as follows:</p>
+                    <ul>
+                        <li><strong>Too Hard:</strong> You couldn't complete the last set.</li>
+                        <li><strong>Okay:</strong> You reached failure or had about 1 rep left in the tank.</li>
+                        <li><strong>Too Easy:</strong> You had 2-3 (or more) reps left in the tank.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/difficulty.png" alt="Difficulty Settings" class="feature-image">
+
+                    <h3 id="individual-set-tracking">Individual Set Tracking</h3>
+                    <p>Individual Set Tracking lets you log each set separately instead of assuming all sets use the same weight and reps in standard mode. For timed exercises, it also allows you to record different durations for each set.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/individual_set_tracking.png" alt="Individual Set Tracking" class="feature-image">
+
+                    <h3 id="adjustments">Adjustments</h3>
+                    <p>Exercise Adjustments keep your workouts progressing through <strong>progressive overload</strong>. After you record your <strong>Difficulty</strong>, automatic or custom adjustments appear on the end screen. You can choose between two modes: <strong>Automatic</strong> or <strong>Custom</strong>.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/adjustments.png" alt="Adjustments" class="feature-image">
+                    
+                    <h4>Automatic Adjustments</h4>
+                    <ul>
+                        <li>Reps are increased or decreased within your set rep range first.</li>
+                        <li>Weight only changes once you've reached the minimum or maximum reps.</li>
+                        <li>Adjustments are applied to your next session after completing the current one.</li>
+                        <li>Average Values can be enabled to base adjustments on the average weight and reps across all recorded sets for exercises with Individual Set Tracking enabled.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/automatic_adjustments.png" alt="Automatic Adjustments" class="feature-image">
+                    
+                    <h4>Custom Adjustments</h4>
+                    <ul>
+                        <li>Manually set how you want the exercise to progress, giving you full control.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/tracking_and_adjusting_exercises/custom_adjustments.png" alt="Custom Adjustments" class="feature-image">
+                </section>
+
+                <section id="exercise-player">
+                    <h2>Using the Exercise Player</h2>
+                    
+                    <p>The exercise player is our unique approach to fitness tracking. Unlike using a notebook or traditional workout tracking method, the exercise player allows you to track workouts quickly between sets with minimal input. Using the exercise player, you can make quick adjustments to your workout and view realtime stats and progress.</p>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#action-mode">Action Mode</a></li>
+                            <li><a href="#rest-mode">Rest Mode</a></li>
+                            <li><a href="#end-mode">End Mode</a></li>
+                            <li><a href="#exercise-queue">Exercise Queue</a></li>
+                            <li><a href="#superset-exercises">Superset Exercises</a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="action-mode">Action Mode</h3>
+                    <p>Displays what you are performing and logging for each exercise and lets you record any changes.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/using_the_exercise_player/action_mode.png" alt="Action Mode" class="feature-image">
+
+                    <h3 id="rest-mode">Rest Mode</h3>
+                    <p>Runs the rest timer for the current exercise.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/using_the_exercise_player/rest_mode.png" alt="Rest Mode" class="feature-image">
+
+                    <h3 id="end-mode">End Mode</h3>
+                    <p>Lets you record how you performed using the Difficulty feature. Automatic or Custom adjustments will also appear on this screen.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/using_the_exercise_player/end_mode.png" alt="End Mode" class="feature-image">
+
+                    <h3 id="exercise-queue">Exercise Queue</h3>
+                    <p>Shows all the exercises in your current session. From here, you can reorder, edit, superset, add, or remove exercises. You'll also see basic stats for the exercises you've completed so far.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/using_the_exercise_player/exercise_queue.png" alt="Exercise Queue" class="feature-image">
+
+                    <h3 id="superset-exercises">Superset Exercises</h3>
+                    <p>You can superset exercises in your queue or routine editor by long pressing an exercise or by enabling the selection mode.</p>
+                    
+                    <p>To undo a superset, select one of the exercises in the superset, then click superset button to undo the superset.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/using_the_exercise_player/superset_exercises.png" alt="Superset Exercises" class="feature-image">
+                </section>
+
+                <section id="statistics">
+                    <h2>Understanding Statistics and Graphs</h2>
+                    
+                    <p>Grin&Gain provides a variety of statistics and graphs to help you track your progress across exercises, routines, and muscle groups. Strength is measured using Epley's formula to estimate your one-rep max (1RM), while other metrics help you monitor volume, intensity, and trends over time.</p>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#exercise-history-data">Exercise History Data</a></li>
+                            <li><a href="#estimated-1rm">Estimated 1RM</a></li>
+                            <li><a href="#average-strength">Average Strength</a></li>
+                            <li><a href="#volume">Volume</a></li>
+                            <li><a href="#relative-intensity">Relative Intensity</a></li>
+                            <li><a href="#muscle-diagram">Muscle Diagram</a></li>
+                            <li><a href="#weekly-improvements">Weekly Improvements</a></li>
+                            <li><a href="#training-metrics">Training Metrics</a></li>
+                            <li><a href="#periodic-trends">Periodic Trends</a></li>
+                            <li><a href="#training-progress">Training Progress</a></li>
+                        </ul>
+                    </nav>
+
+                    <h3 id="exercise-history-data">Exercise History Data</h3>
+                    <p>This table shows the history of exercise data. It can be found in the Exercise Statistics tab.</p>
+                    
+                    <p>To see more exercise insights, open the dropdown at the top of the page.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/exercise_history_data.png" alt="Exercise History Data" class="feature-image">
+
+                    <h3 id="estimated-1rm">Estimated 1RM</h3>
+                    <p>Your <strong>1 Rep Max (1RM)</strong> is an estimate of the maximum weight you could lift for a single repetition. This allows you to track your overall strength progress without testing a true max lift directly.</p>
+                    
+                    <p>Grin&Gain calculates this automatically using Epley's formula, based on the weight and reps you record.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/estimated_1rm_equation.png" alt="Estimated 1RM Equation" class="equation-image">
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/estimated_1rm.png" alt="Estimated 1RM Graph" class="feature-image">
+
+                    <h3 id="average-strength">Average Strength</h3>
+                    <p>Average Strength calculates a weighted average of your estimated 1RM across all sets in a session. This gives you a more balanced measure of strength beyond a single top set.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/average_strength_equation.png" alt="Average Strength Equation" class="equation-image">
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/average_strength.png" alt="Average Strength Graph" class="feature-image">
+
+                    <h3 id="volume">Volume</h3>
+                    <p>Training Volume is the total amount of work performed for an exercise (weight × reps × sets).</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/volume_equation.png" alt="Volume Equation" class="equation-image">
+
+                    <h3 id="relative-intensity">Relative Intensity</h3>
+                    <p>Relative Intensity compares the weight you lifted to your estimated 1RM, showing how challenging a set was relative to your max strength.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/relative_intensity_equation.png" alt="Relative Intensity Equation" class="equation-image">
+
+                    <h3 id="muscle-diagram">Muscle Diagram</h3>
+                    <p>The <strong>Muscle Diagram</strong> highlights how many sets you've performed per muscle group. The more sets a muscle group has, the brighter red it appears.</p>
+                    
+                    <ul>
+                        <li>Use the <strong>Unlabeled Exercises</strong> button to view exercises that don't yet have muscle data assigned.</li>
+                        <li>You can edit muscle data for any exercise under the <strong>Info</strong> tab in the Exercise Dialog.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/muscle_diagram.png" alt="Muscle Diagram" class="feature-image">
+
+                    <h3 id="weekly-improvements">Weekly Improvements</h3>
+                    <p>The Weekly Improvements view (inside the Statistics page) shows how each exercise has progressed compared to the previous week.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/weekly_improvements.png" alt="Weekly Improvements" class="feature-image">
+
+                    <h3 id="training-metrics">Training Metrics</h3>
+                    <p>On the <strong>Progress</strong> and <strong>Routine Statistics</strong> pages, you'll find graphs that summarize your <strong>Training Metrics</strong>:</p>
+                    
+                    <ul>
+                        <li><strong>Average Strength</strong> – Normalized average strength across all sets.</li>
+                        <li><strong>Average estimated 1RM</strong> – The average 1RM across all exercises.</li>
+                        <li><strong>Training Volume</strong> – The sum of all volume for exercises at a given point.</li>
+                    </ul>
+                    
+                    <p>You can customize these graphs by:</p>
+                    <ul>
+                        <li>Selecting time ranges (yearly, quarterly, monthly, or all-time).</li>
+                        <li>Viewing data per session, weekly, or monthly (x-axis).</li>
+                        <li>Filtering by all routines or a specific routine.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/training_metrics.png" alt="Training Metrics" class="feature-image">
+
+                    <h3 id="periodic-trends">Periodic Trends</h3>
+                    <p>Periodic trends show the percentage change in your progress from a chosen starting point (year, quarter, or month). This makes it easy to see which exercises or muscle groups are improving the most.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/periodic_trends.png" alt="Periodic Trends" class="feature-image">
+
+                    <h3 id="training-progress">Training Progress</h3>
+                    <p>Training Progress displays the raw numbers for strength or volume averages. This view is best when comparing similar exercises side by side.</p>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/understanding_statistics_and_graphs/training_progress.png" alt="Training Progress" class="feature-image">
+                </section>
+
+                <section id="scheduling">
+                    <h2>Program Scheduling and Notifications</h2>
+                    
+                    <p>To keep track of which workout you're performing on a given day, you can schedule your workout routines within <strong>Programs</strong> by the <strong>Daily</strong> and <strong>Weekly</strong> modes.</p>
+                    
+                    <ul>
+                        <li><strong>Daily</strong> – Schedules are given a start day and date. This mode loops scheduling routines after the last numerical day. This mode is best for programs that repeat for more than 7 days.</li>
+                        <li><strong>Weekly</strong> – Schedules workouts by day of the week.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/scheduling_and_notifications.png" alt="Scheduling and Notifications" class="feature-image">
+                </section>
+
+                <section id="backing-up">
+                    <h2>Backing Up Data</h2>
+                    
+                    <p>The best way to keep your fitness data safe is by <strong>linking your Google Drive account</strong> under the <strong>Provider</strong> section in the <strong>Backup Options</strong> page. This enables automatic backups after every completed workout, as well as daily backups every 24 hours.</p>
+                    
+                    <p>You can also manage backups manually:</p>
+                    <ul>
+                        <li><strong>Backup Options</strong> – Use the <strong>Backup</strong> and <strong>Restore</strong> buttons to save or retrieve your data.</li>
+                        <li><strong>Local File Options</strong> – Save and restore a backup file directly to your device's storage.</li>
+                        <li><strong>Local Backups</strong> – View all backup files stored within the app's documents folder.</li>
+                    </ul>
+                    
+                    <img src="https://uadvycszfglceffforyf.supabase.co/storage/v1/object/public/public_images/featured_content/feature_guide/backing_up_data.png" alt="Backing Up Data" class="feature-image">
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <section class="footer bg-dark">
+        <div class="container grid">
+            <div class="contact m-1">
+                <a href="index.html" class="logo"><img src="images/Logo.png" alt=""></a>
+                <div class="social m-1">
+                    <a href="https://www.instagram.com/grinngain/"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="https://www.youtube.com/@grinngain"><i class="fa-brands fa-youtube fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="https://www.facebook.com/people/GrinGain/61559344051144/"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                </div>
+                <p>General Inquiries: <a href="mailto:info@grinngain.com">info@grinngain.com</a></p>
+                <p>Customer Support: <a href="mailto:support@grinngain.com">support@grinngain.com</a></p>
+            </div>
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="access.html">Get Early Access</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                    </ul>
+                </nav>
+                <p>Interested in Joining the Team? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBqMpMcbBKnFyB0V9BKCLgO62m8xLoEIJi52ct6YyI6wP_5w/viewform">Let Us Know!</a></p>
+                <p>Want to Report a Bug? Or give us Feedback? <a href="https://forms.gle/ho7fnsNgRB6tFhuZ6">Tell Us Here</a></p>
+            </div>
+        </div>
+        <p class="copy">Copyright &copy; 2025 Grin&Gain. All Rights Reserved</p>
+    </section>  
+</body>
+</html>

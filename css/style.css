@@ -375,7 +375,7 @@ main
     padding: 20px 0 40px;
 }
 
-/* Privacy Policy Page */
+/* Privacy Policy/T&C Page */
 #floating-btn {
     width: 40px;
     height: 40px;
@@ -608,7 +608,6 @@ main
 }
 
 .article ul li {
-    font-size: 18px;
     padding-bottom: 8px;
 }
 

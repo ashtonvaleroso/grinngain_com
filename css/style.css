@@ -231,7 +231,7 @@ i {
 main
 {
     width: 70%;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 /* Features */

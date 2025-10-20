@@ -1,0 +1,10 @@
+<!-- grinngain.com/callback -->
+<script>
+  // Parse the Apple response from URL parameters
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  const id_token = params.get('id_token');
+
+  // Redirect back into the Android app
+  window.location.href = `intent://callback?code=${encodeURIComponent(code)}&id_token=${encodeURIComponent(id_token)}#Intent;package=com.grinngain.app;scheme=signinwithapple;end`;
+</script>

@@ -24,6 +24,7 @@
 body{
     font-family: "Heebo", sans-serif;
     overflow-x: hidden;
+    width: 100%;
 }
 
 h2, h3, h4, h5 {
@@ -180,16 +181,18 @@ i {
 .hero p{
     margin: 20px 0;
     color: #AFAFAF;
+    font-size: larger;
+    width: 70%;
 }
 
-.download {
+.download-hero {
     justify-content: start !important;
     align-items: center;
     padding-left: 0 !important;
     gap: 20px;
 }
 
-.download .lg-btn {
+.download-hero .lg-btn {
     font-size: 16px !important;
     height: 100% !important;
     background-color: whitesmoke;
@@ -197,23 +200,12 @@ i {
     color: black;
 }
 
-.download a img {
+.download-hero a img {
     display: inline-block;
     height: 48px;
     width: auto;
     justify-self: center;
     align-self: center;
-}
-
-.download-btns
-{
-    justify-content: center;
-    gap: 40px;
-    padding: 20px 0 !important;
-}
-
-.download-btns .lg-btn {
-    background-color: var(--primary-color);
 }
 
 .hero img{
@@ -239,7 +231,7 @@ i {
 main
 {
     width: 70%;
-    justify-self: center;
+    margin: 0 auto;
 }
 
 /* Features */
@@ -274,7 +266,8 @@ main
 }   
 
 .features .description p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 1.4;
 }
 
@@ -319,6 +312,47 @@ main
     height: 400px;
     width: auto;
 }
+
+
+/* Donwnload CTA section */
+.download {
+    background-image: linear-gradient(to bottom, #222222, #0c0c0c);
+    color: white;
+}
+
+.download-description {
+    padding-left: 60px;
+}
+
+.download-description h2 {
+    font-size: 4vmax !important;
+    padding-bottom: 16px;
+}
+
+.download-description p {
+    font-size: larger;
+}
+
+.download-final
+{
+    justify-content: left !important;
+    gap: 20px;
+    padding: 20px 0 !important;
+}
+
+.download-final .lg-btn {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.download img {
+    width: 80%;
+    display: block;
+    justify-self: center;
+}
+
 
 /* Footer */
 .footer {
@@ -715,9 +749,22 @@ main
         text-align: center;
     }
 
-    .download {
+    .hero .grid,
+    .download .grid {
+        gap: 60px;
+    }
+
+    .hero h1 {
+        font-size: 42px !important;
+    }
+
+    .hero p{
+        width: 100%;
+    }
+
+    .btns {
         justify-content: center !important;
-        padding-left: 0 !important;
+        padding: 0 !important;
     }
 
 
@@ -806,16 +853,21 @@ main
         text-align: center;
     }
 
-    .download-description {
-        text-align: center;
+    section.download{
+        padding: 80px 0px;
     }
 
-    .download .lg-btn {
+    .download-description {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .download-final .lg-btn {
         font-size: 14px !important;
         padding: 10px 20px !important;
     }
 
-    .download-btns
+    .download-final
     {
         gap: 20px;
     }
@@ -889,10 +941,12 @@ main
         display: block;
         justify-self: center;
     }
-        
 }
 
 /* Mobile */
 @media(max-width: 500px) {
-
+    .btns {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

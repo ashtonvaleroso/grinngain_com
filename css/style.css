@@ -267,7 +267,7 @@ main
 
 .features .description p {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.4;
 }
 
@@ -685,22 +685,32 @@ main
 
 
 /* Access Page */
-.access img {
-    width: 100%;
+.access .grid {
+    grid-template-columns: 1fr !important;
 }
 
-.access .download {
-    justify-content: center !important;
-    padding-bottom: 40px;
-    gap: 20px;
-    
+.access img {
+    width: 100%;
 }
 
 .access p {
     padding: 0 10px 10px;
 }
 
+.download-access {
+    justify-content: center !important;
+    padding-bottom: 60px;
+    gap: 20px;
+}
 
+.download-access .lg-btn{
+    font-size: 16px !important;
+    height: 100% !important;
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+}
 
 
 /* Tablets and Under */

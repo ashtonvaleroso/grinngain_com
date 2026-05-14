@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #1CDA5B;
     --brand-color: #3DF57A;
     --secondary-color: #0BAA3F;
@@ -21,14 +21,17 @@
     margin: 0px;
 }
 
-body{
+body {
     font-family: "Heebo", sans-serif;
     overflow-x: hidden;
     width: 100%;
 }
 
-h2, h3, h4, h5 {
-    font-weight: 500;
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
 }
 
 h2 {
@@ -36,27 +39,27 @@ h2 {
     line-height: 1.2;
 }
 
-p{
+p {
     padding-bottom: 10px;
-    font-weight: 300;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 14pt;
 }
 
 .text-secondary {
     padding-bottom: 0.5rem;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.highlight{
+.highlight {
     color: var(--brand-color);
 }
 
-.highlight-2{
+.highlight-2 {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .highlight-3 {
@@ -71,7 +74,7 @@ img{
 
 
 /* Navbar  */
-.navbar{
+.navbar {
     height: fit-content;
     width: 90%;
     padding: 20px;
@@ -81,20 +84,20 @@ img{
     justify-self: center;
 }
 
-.logo img{
+.logo img {
     height: 32px;
     width: auto;
     display: block;
 }
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     color: #AFAFAF;
     padding: 12px;
@@ -103,13 +106,13 @@ img{
     font-weight: 400;
 }
 
-.navbar nav a:hover{
+.navbar nav a:hover {
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 600;
     border-bottom: 1px var(--brand-color) solid;
 }
 
-.navbar a.btn{
+.navbar a.btn {
     background-color: var(--primary-color);
     color: black;
     border: none;
@@ -119,7 +122,7 @@ img{
     display: none;
 }
 
-.navbar .flex{
+.navbar .flex {
     justify-content: space-between;
 }
 
@@ -136,11 +139,11 @@ img{
 
 .navbar .active {
     color: white;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-i { 
-    font-family: FontAwesome !important; 
+i {
+    font-family: FontAwesome !important;
     font-style: normal;
 }
 
@@ -159,14 +162,14 @@ i {
 }
 
 /* Hero */
-.hero{
-    height: 90vh;
-    background-image: url('../images/hero-bg.png');
+.hero {
+    height: 100vh;
     background-size: cover;
+    background-color: black;
     color: white;
 }
 
-.hero .container.grid{
+.hero .container.grid {
     width: 85%;
     justify-self: center;
 }
@@ -174,11 +177,11 @@ i {
 .hero h1 {
     font-size: 5vmax !important;
     font-optical-sizing: auto;
-    font-weight: 500 ;
+    font-weight: 600;
     line-height: 1.2;
 }
 
-.hero p{
+.hero p {
     margin: 20px 0;
     color: #AFAFAF;
     font-size: larger;
@@ -202,35 +205,27 @@ i {
 
 .download-hero a img {
     display: inline-block;
-    height: 48px;
-    width: auto;
+    width: 180px;
+    height: auto;
     justify-self: center;
     align-self: center;
 }
 
-.hero img{
+.hero .hero-img img {
     height: auto;
     width: 100%;
-    justify-self:flex-start;
+    justify-self: flex-start;
 }
 
-.hero::before,
-.head::before,
-.head-empty::before {
-    background-color: black;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100px;
-    z-index: 0;
+.workmark {
+    height: 5rem;
+    width: auto;
+    display: block;
 }
 
-main
-{
-    width: 70%;
+
+
+main {
     margin: 0 auto;
 }
 
@@ -252,6 +247,8 @@ main
 
 .features .flip {
     grid-template-columns: 55% 45% !important;
+    color: white;
+    background-color: black;
 }
 
 .features-heading {
@@ -261,28 +258,23 @@ main
 
 .features .description {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 26pt;
     width: 80%;
-}   
+}
 
 .features .description p {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 22pt;
     line-height: 1.4;
 }
 
-.feature-card {
-    background-color: #171717;
-    border-radius: 16px;
-    color: white;
-    box-shadow: inset 5px 10px 10px rgba(255, 255, 255, 0.1);
-    padding: 30px 30px 20px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #1b1b1b, #0c0c0c);
+.features .description p b {
+    font-weight: 600;
+    color: #41BF41;
 }
 
+
 .feature-card img {
-    max-height: 500px;
+    max-height: 80vh;
     width: auto;
 }
 
@@ -296,7 +288,7 @@ main
 }
 
 /* Insights & Statistics */
-.insights{
+.insights {
     padding: 40px 0;
 }
 
@@ -333,8 +325,7 @@ main
     font-size: larger;
 }
 
-.download-final
-{
+.download-final {
     justify-content: left !important;
     gap: 20px;
     padding: 20px 0 !important;
@@ -353,6 +344,12 @@ main
     justify-self: center;
 }
 
+.download-hero a img,
+.download-final a img {
+    width: 180px;
+    height: auto;
+}
+
 
 /* Footer */
 .footer {
@@ -360,7 +357,7 @@ main
     padding: 10px 20px;
 }
 
-.footer .logo img{
+.footer .logo img {
     height: 48px;
     width: auto;
     display: block;
@@ -432,7 +429,7 @@ main
     padding: 20px 0 80px;
 }
 
-.content ul{
+.content ul {
     padding-inline-start: 40px;
     padding-bottom: 20px;
 }
@@ -441,7 +438,10 @@ main
     padding: 10px 0;
 }
 
-.content h2, h3, h4, h5 {
+.content h2,
+h3,
+h4,
+h5 {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
@@ -450,11 +450,11 @@ main
     font-weight: 700;
 }
 
-.content .toc ul{
+.content .toc ul {
     list-style: none;
     padding-inline-start: 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .table-container {
@@ -489,7 +489,7 @@ main
 
 .category-column {
     width: 20%;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .examples-column {
@@ -524,7 +524,7 @@ main
 .about-title h1 {
     font-size: 32px !important;
     font-optical-sizing: auto;
-    font-weight: 400 ;
+    font-weight: 400;
     line-height: 1.2;
     padding-bottom: 20px;
 }
@@ -536,7 +536,7 @@ main
 .italic {
     font-family: Arial, Helvetica, sans-serif !important;
     font-style: italic !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
 }
 
 .title {
@@ -554,7 +554,7 @@ main
     align-items: end;
 }
 
-.member-card img{
+.member-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -671,13 +671,16 @@ main
     border-radius: 5px;
     margin-bottom: 30px;
 }
+
 .feature-guide nav ul {
     list-style: none;
     padding: 0;
 }
+
 .feature-guide nav li {
     margin: 8px 0;
 }
+
 .feature-guide nav a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -703,7 +706,7 @@ main
     gap: 20px;
 }
 
-.download-access .lg-btn{
+.download-access .lg-btn {
     font-size: 16px !important;
     height: 100% !important;
     background-color: whitesmoke;
@@ -715,12 +718,12 @@ main
 
 /* Tablets and Under */
 @media(max-width: 786px) {
+
     .grid,
     .hero .grid,
-    .features .grid
-    .insightss .grid .grid-3,
+    .features .grid .insightss .grid .grid-3,
     .insights .grid,
-    .download .grid, 
+    .download .grid,
     .footer .grid,
     .about-head .grid,
     .team-members .grid {
@@ -744,13 +747,8 @@ main
         border-top-width: 55;
         border-radius: 0;
         height: 70px;
-    }   
-
-    .hero::before,
-    .head::before,
-    .head-empty::before {
-        height: 80px;
     }
+
 
     /* Hero Mobile Formatting */
     .hero {
@@ -768,13 +766,18 @@ main
         font-size: 42px !important;
     }
 
-    .hero p{
+    .hero p {
         width: 100%;
     }
 
     .btns {
         justify-content: center !important;
         padding: 0 !important;
+    }
+
+    .workmark {
+        height: 3rem;
+        margin: 1rem auto;
     }
 
 
@@ -786,10 +789,10 @@ main
     }
 
     .features .description p {
-    font-size: 18px;
-    line-height: 1.4;
-    padding: 0 16px 20px;
-}
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 0 16px 20px;
+    }
 
     .features .flip {
         grid-template-columns: 1fr !important;
@@ -798,7 +801,7 @@ main
     .features .feature-card {
         order: 2 !important;
     }
-    
+
     .feature-card img {
         max-height: 300px;
     }
@@ -826,7 +829,7 @@ main
     }
 
 
-    .icons #close{
+    .icons #close {
         display: none;
     }
 
@@ -857,13 +860,13 @@ main
         display: inline;
     }
 
-    .features-heading{
+    .features-heading {
         font-weight: 600;
         font-size: 1.9rem;
         text-align: center;
     }
 
-    section.download{
+    section.download {
         padding: 80px 0px;
     }
 
@@ -877,16 +880,21 @@ main
         padding: 10px 20px !important;
     }
 
-    .download-final
-    {
+    .download-final {
         gap: 20px;
+    }
+
+    .download-hero a img,
+    .download-final a img {
+        width: 140px;
+        height: auto;
     }
 
     .title {
         padding: 0 20px 40px;
     }
 
-    .head{
+    .head {
         padding: 40px 20px 60px;
         text-align: center;
     }
@@ -908,15 +916,15 @@ main
         text-align: center;
     }
 
-    .member-card img{
+    .member-card img {
         width: 50vw;
         justify-self: center;
     }
 
     main {
         width: 100%;
-    }    
-    
+    }
+
     .articles .grid {
         gap: 60px;
     }
@@ -958,5 +966,11 @@ main
     .btns {
         flex-direction: column;
         gap: 16px;
+    }
+
+    .download-hero a img,
+    .download-final a img {
+        width: 120px;
+        height: auto;
     }
 }

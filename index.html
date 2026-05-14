@@ -21,40 +21,18 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <a class="logo" href="index.html"><img src="images/Grin&Gain.png"></a>
-            <input type="checkbox" id="check">
-            <nav id="navy">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
-                    <a href="access.html" class="btn mobile-btn">Download Now</a>
-                </ul>
-            </nav>
-            <a href="access.html" class="btn desktop-btn">Download Now</a>
-
-
-            <label for="check" class="icons">
-                <i class="bi bi-list" id="menu" style="color: #AFAFAF;"></i>
-                <i class="bi bi-x-lg" id="close" style="color: #AFAFAF;"></i>
-
-            </label>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
     <section class="hero">
+        <img src="images/Grin&Gain Workmark.png" class="workmark">
         <div class="container grid">
             <div class="hero-title">
                 <h1>Track Easy. <br><span class="highlight">Train Smarter.</span></h1>
                 <p>Grin&Gain redefines workout tracking to help you see the progress you're looking for.</p>
-                <div class="btns download-hero container flex">
+                <div class="btns download-hero flex">
                     <!-- <a href=""><img src="images/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt=""></a> -->
-                    <a href="https://apps.apple.com/us/app/grin-gain/id6642677817" class="lg-btn">iOS Access</a>
-                    <a href="https://appdistribution.firebase.dev/i/ebb5a1db26030a45" class="lg-btn">Android Access</a>
+                    <a href="https://apps.apple.com/us/app/grin-gain/id6642677817"><img
+                            src="images/appstore_badge.png"></a>
+                    <a href="https://appdistribution.firebase.dev/i/ebb5a1db26030a45"><img
+                            src="images/get_android_early_access.png"></a>
                 </div>
             </div>
             <div class="hero-img">
@@ -72,67 +50,72 @@
                     <img src="images/Workout Player.png" alt="">
                 </div>
                 <div class="description">
-                    <h2 class="features-heading my-2">Experience The Simplest Workout Tracking App</h2>
-                    <p class="text-secondary">Designed to help you stay focused during each
-                        exercise and make quick, instant adjustments.</p>
-                    <p class="text-secondary"><strong>Just press play and let the app guide you through your workout.</strong></p>
+                    <h2 class="features-heading my-2">Exercise Player</h2>
+                    <p class="text-secondary">Track your workouts <b>effortlessly</b> with the tap of a button</p>
                 </div>
-                
-
             </div>
 
             <div class="container grid flip">
-                
                 <div class="description">
-                    <h2 class="features-heading my-2">Understand Your Workout, At a Glance</h2>
-                    <p class="text-secondary">Stay focused with our Queue. Track your progress in
-                        real time, adjust on the fly, and view stats without breaking your flow.</p>
+                    <h2 class="features-heading my-2">Automatic Adjustments</h2>
+                    <p class="text-secondary">Easily adjust your exercises for <b>progressive overload</b></p>
                 </div>
                 <div class="feature-card">
                     <!-- add gif of running through the queue: middle of workout, click on an exercise, move one up, open stats-->
-                    <img src="images/Queue.png" alt="">
+                    <img src="images/Progressive Overload.png" alt="">
                 </div>
             </div>
 
             <div class="container grid">
-                
                 <div class="feature-card">
                     <!-- add gif of adjusting your workout on end screen: too hard, okay, too easy-->
-                    <img src="images/Adjust.png" alt="">
+                    <img src="images/Exercise Queue.png" alt="">
                 </div>
                 <div class="description">
-                    <h2 class="features-heading my-2">Adjust Your Routines Automatically</h2>
-                    <p class="text-secondary">Take the guesswork out of training with automatic or custom workout
-                        adjustments that keep your routines progressing and your strength building consistently.</p>
+                    <h2 class="features-heading my-2">Exercise Queue</h2>
+                    <p class="text-secondary"><b>Log workouts</b> as easily as listening to music</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Insights Section -->
-        <section class="insights">
-            <div class="title text-center">
-                <h2 class="py-1">Get Insights That Drive Progress</h2>
-                <p>View your progress with detailed graphs and statistics. Get daily and weekly reports to track
-                    exercises, muscles worked, and more.</p>
+            <div class="container grid flip">
+                <div class="description">
+                    <h2 class="features-heading my-2">Muscle Diagram</h2>
+                    <p class="text-secondary">Spot and <b>track muscle imbalances</b> over time</p>
+                </div>
+                <div class="feature-card">
+                    <!-- add gif of running through the queue: middle of workout, click on an exercise, move one up, open stats-->
+                    <img src="images/Muscle Diagram.png" alt="">
+                </div>
             </div>
-            <div class="container grid grid-3 text-center">
-                <div class="insight">
-                    <img src="images/Exercise.png" alt="">
-                    <h3>Exercise Insights</h3>
-                    <p class="text-secondary px-1">Go beyond sets and reps with detailed breakdowns for each of your
-                        exercises—giving you a clear picture of your true performance.</p>
+            <div class="container grid">
+                <div class="feature-card">
+                    <!-- add gif of running throught the workout player -->
+                    <img src="images/Progress Graphs.png" alt="">
                 </div>
-                <div class="insight">
-                    <img src="images/weekly_improv.png" alt="">
-                    <h3>Weekly Improvements</h3>
-                    <p class="text-secondary px-1">See how you’re progressing with weekly comparisons that highlight
-                        your gains, so you always know where you’re improving.</p>
+                <div class="description">
+                    <h2 class="features-heading my-2">Strength & Volume Graphs</h2>
+                    <p class="text-secondary">Understand your training on a deeper level with <b>powerful insights</b></p>
                 </div>
-                <div class="insight">
-                    <img src="images/Overall.png" alt="">
-                    <h3>Overall Progress</h3>
-                    <p class="text-secondary px-1">Track the bigger picture of your fitness journey through raw numbers
-                        and clear trend lines, showing your average percentage changes from where you started.</p>
+            </div>
+
+            <div class="container grid flip">
+                <div class="description">
+                    <h2 class="features-heading my-2">Fitness Library</h2>
+                    <p class="text-secondary"><b>Build & customize</b> workout routines and exercises</p>
+                </div>
+                <div class="feature-card">
+                    <!-- add gif of running through the queue: middle of workout, click on an exercise, move one up, open stats-->
+                    <img src="images/Fitness Library.png" alt="">
+                </div>
+            </div>
+            <div class="container grid">
+                <div class="feature-card">
+                    <!-- add gif of running throught the workout player -->
+                    <img src="images/Fitness Community.png" alt="">
+                </div>
+                <div class="description">
+                    <h2 class="features-heading my-2">Fitness Community</h2>
+                    <p class="text-secondary">Keep up with your friends' progress to <b>motivate each other</b></p>
                 </div>
             </div>
         </section>
@@ -143,10 +126,11 @@
             <div class="download-description">
                 <h2>Ready to Start Tracking?</h2>
                 <p>Download our latest release on iOS or Android today.</p>
-                <div class="btns download-final container flex">
-                    <a href="https://apps.apple.com/us/app/grin-gain/id6642677817" class="lg-btn"> iOS Access</a>
-                    <a href="https://appdistribution.firebase.dev/i/ebb5a1db26030a45" class="lg-btn">Android
-                        Access</a>
+                <div class="btns download-final flex">
+                    <a href="https://apps.apple.com/us/app/grin-gain/id6642677817"><img
+                            src="images/appstore_badge.png"></a>
+                    <a href="https://appdistribution.firebase.dev/i/ebb5a1db26030a45"><img
+                            src="images/get_android_early_access.png"></a>
                 </div>
             </div>
             <img src="images/Mockup.png" alt="">
@@ -162,7 +146,7 @@
                             style="color: #ffffff;"></i></a>
                     <a href="https://www.youtube.com/@grinngain"><i class="fa-brands fa-youtube fa-lg"
                             style="color: #ffffff;"></i></a>
-                    
+
                 </div>
                 <p>General Inquiries: <a href="mailto:info@grinngain.com">info@grinngain.com</a></p>
                 <p>Customer Support: <a href="mailto:support@grinngain.com">support@grinngain.com</a></p>
@@ -171,28 +155,14 @@
                 <div class="pages">
                     <nav>
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="access.html">Download Now</a></li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <ul>
                             <li><a href="privacy_policy.html">Privacy Policy</a></li>
                             <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
                         </ul>
                     </nav>
                 </div>
-                
-                <p>Interested in Joining the Team? <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSeBqMpMcbBKnFyB0V9BKCLgO62m8xLoEIJi52ct6YyI6wP_5w/viewform">Let
-                        Us Know!</a></p>
-                <p>Want to Report a Bug? Or give us Feedback? <a
-                        href="https://forms.gle/ho7fnsNgRB6tFhuZ6">Tell
-                        Us Here</a></p>
             </div>
         </div>
-        <p class="copy">Copyright &copy; 2025 Grin&Gain. All Rights Reserved</p>
+        <p class="copy">Copyright &copy; 2026 Grin&Gain. All Rights Reserved</p>
     </section>
 </body>
 

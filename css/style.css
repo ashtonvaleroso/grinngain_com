@@ -412,6 +412,19 @@ main {
 }
 
 /* Privacy Policy/T&C Page */
+body.legal-page {
+    background-color: #000;
+    color: #fff;
+}
+
+body.legal-page a {
+    color: var(--brand-color);
+}
+
+body.legal-page a:hover {
+    color: var(--primary-color);
+}
+
 #floating-btn {
     width: 40px;
     height: 40px;
@@ -432,6 +445,11 @@ main {
     width: 95%;
     justify-self: center;
     padding: 20px 0 80px;
+}
+
+.legal-page .content {
+    background-color: #000;
+    color: #fff;
 }
 
 .content ul {
@@ -490,6 +508,20 @@ h5 {
 
 .data-table tr:nth-child(even) {
     background-color: #f8f9fa;
+}
+
+.legal-page .data-table th,
+.legal-page .data-table td {
+    border-color: #3a3a3a;
+}
+
+.legal-page .data-table th {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.legal-page .data-table tr:nth-child(even) {
+    background-color: #111;
 }
 
 .category-column {

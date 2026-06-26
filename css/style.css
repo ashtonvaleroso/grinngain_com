@@ -237,6 +237,8 @@ main {
 /* Features */
 .features {
     padding: 40px 0;
+    color: #fff;
+    background-color: #000;
 }
 
 .features .container {
@@ -252,8 +254,6 @@ main {
 
 .features .flip {
     grid-template-columns: 55% 45% !important;
-    color: white;
-    background-color: black;
 }
 
 .features-heading {
@@ -274,7 +274,7 @@ main {
 
 .features .description p b {
     font-weight: 600;
-    color: #41BF41;
+    color: #fff;
 }
 
 
@@ -313,7 +313,7 @@ main {
 
 /* Donwnload CTA section */
 .download {
-    background-image: linear-gradient(to bottom, #222222, #0c0c0c);
+    background-color: #000;
     color: white;
 }
 

@@ -1,14 +1,13 @@
 [
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "com.grinngain.app",
-            "sha256_cert_fingerprints": [
-                "8c:d1:8d:3d:80:c8:a6:d5:23:42:b1:33:ea:98:91:d7:a0:79:2c:77:54:17:2b:10:8e:d7:f9:02:d8:2d:48:0c"
-            ]
-        }
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.grinngain.app",
+      "sha256_cert_fingerprints": [
+        "B2:A9:5B:C5:22:AC:F5:32:7E:FB:0E:AF:A4:95:D8:EC:86:AA:69:F7:7F:7D:9C:6B:71:A2:AE:1C:79:D5:A6:79",
+        "8C:D1:8D:3D:80:C8:A6:D5:23:42:B1:33:EA:98:91:D7:A0:79:2C:77:54:17:2B:10:8E:D7:F9:02:D8:2D:48:0C"
+      ]
     }
+  }
 ]

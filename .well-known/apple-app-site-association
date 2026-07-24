@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "DG84JH6Y7C.com.grinngain.app",
+        "appIDs": "DG84JH6Y7C.com.grinngain.app",
         "paths": [
           "*"
         ],

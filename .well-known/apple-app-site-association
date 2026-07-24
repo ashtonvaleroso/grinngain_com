@@ -5,11 +5,19 @@
       {
         "appID": "DG84JH6Y7C.com.grinngain.app",
         "paths": [
-          "/workouts/*",
-          "/profiles/*/routines/*",
-          "/profiles/*/programs/*"
+          "*"
+        ],
+        "components": [
+          {
+            "/": "/*"
+          }
         ]
       }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "DG84JH6Y7C.com.grinngain.app"
     ]
   }
 }

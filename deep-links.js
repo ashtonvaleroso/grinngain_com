@@ -7,6 +7,7 @@
   const website = "https://www.grinngain.com/";
   const path = window.location.pathname;
   const supported =
+    /^\/profiles\/[^/]+\/?$/.test(path) ||
     /^\/workouts\/[^/]+\/\d+\/?$/.test(path) ||
     /^\/profiles\/[^/]+\/(routines|programs)\/\d+\/?$/.test(path);
 

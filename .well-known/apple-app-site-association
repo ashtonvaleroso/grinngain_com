@@ -4,12 +4,14 @@
     "details": [
       {
         "appIDs": ["DG84JH6Y7C.com.grinngain.app"],
-        "paths": [
-          "*"
-        ],
         "components": [
           {
-            "/": "/*"
+            "/": "/profiles/*",
+            "comment": "Opens shared Grin&Gain profiles, routines, and programs."
+          },
+          {
+            "/": "/workouts/*",
+            "comment": "Opens shared Grin&Gain workouts."
           }
         ]
       }
